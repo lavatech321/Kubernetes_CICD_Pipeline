@@ -1,0 +1,15 @@
+- name: Setup Jenkins, Docker and Data Science Pipeline
+  hosts: localhost
+  become: yes
+  roles:
+    # install and configure jenkins
+    - devops.projects.jenkins
+
+    # install docker and docker compose
+    - devops.projects.docker
+
+    # configure minkube kubernetes cluster
+    - devops.projects.kubernetes
+
+    # CICD app deployment
+    - devops.projects.fullstack_kubernetes_deploy
