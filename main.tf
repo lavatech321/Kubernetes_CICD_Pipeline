@@ -117,9 +117,9 @@ output "MYsql-Live" {
 	value = "MySQL Credentails: mysql -uappuser -papppass appdb \n"
 }
 
-output "Export-port-to-access-the-application" {
-	value = " kubectl port-forward service/frontend 30000:3000 --address 0.0.0.0 & \n kubectl port-forward service/backend 30081:7081 --address 0.0.0.0 & \n"
-}
+#output "Export-port-to-access-the-application" {
+#	value = " kubectl port-forward service/frontend 30000:3000 --address 0.0.0.0 & \n kubectl port-forward service/backend 30081:7081 --address 0.0.0.0 & \n"
+#}
 
 output "App-Live" {
 	value = "Reactjs and Spring boot Live: http://${aws_instance.servers.public_ip}:30000 \n"
