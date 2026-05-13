@@ -119,7 +119,19 @@ Kubernetes Cluster Running:
 
 ---
 
-# ☁️ Terraform Commands
+# ☁️ Infrastructure Deployment
+
+## Configure Terraform Variables
+
+Update the `terraform.tfvars` file with your AWS credentials.
+
+```bash
+% cat terraform.tfvars
+
+AWS_ACCESS_KEY=""
+AWS_SECRET_KEY=""
+AWS_REGION="us-east-1"
+```
 
 ## Initialize Terraform
 
